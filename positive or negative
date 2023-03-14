@@ -1,0 +1,17 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+      int n;
+      Scanner sc=new Scanner(System.in);         
+      n=sc.nextInt();                          // To get a int value from the user
+      
+      if(n==0)
+      System.out.println("The number is Zero");
+      else
+      {
+          String result;
+          result=(n>0)? "The number is Positive":"The number is Negative";          // using ternary operator
+           System.out.println(result);
+      }
+    }
+}
