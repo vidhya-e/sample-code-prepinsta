@@ -1,0 +1,11 @@
+import java.util.*;                                       
+class Even_Odd {
+    public static void main(String[] args) {
+        int num;
+        String s;
+        Scanner sc=new Scanner (System.in);              // Using scanner class to get the input from user and store it in "num" variable
+        num=sc.nextInt();
+        s=(num%2==0)? "even": "odd";              // Using ternary opeartor
+        System.out.println(num+" is a "+s);
+    }
+}
