@@ -1,0 +1,16 @@
+import java.util.*;
+class Sum_N_Natural_Numbers {
+    public static void main(String[] args) {
+        int num,sum=0;
+        System.out.print("Enter a number upto which the sum must be found: ");
+        Scanner sc=new Scanner (System.in);                                           // using scanner class to get the input value
+        num=sc.nextInt();
+        
+        sum=num * ((num+1)/2);           // first method using formula
+        
+      //for(int i=0;i<=num;i++)           // second method using for loop
+      //sum+=i;
+        
+        System.out.printf("sum of natural numbers upto %d is %d",num,sum);        // using printf method
+    }
+}
