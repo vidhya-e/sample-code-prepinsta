@@ -1,0 +1,19 @@
+import java.util.*;
+class Greatest_Of_Three_Numbers {
+    public static void main(String[] args) {
+         int num1,num2,num3;
+         System.out.println("Enter 3 numbers: ");
+        Scanner sc=new Scanner (System.in);              // Using scanner class to get the input from user and store it in "num" variable
+        num1=sc.nextInt();
+        num2=sc.nextInt();
+        num3=sc.nextInt();
+        
+        if(num1==num2 && num2==num3)
+             System.out.println("All 3 numbers are equal ");
+        else{
+            int max= num1>num2? num1: num2;                                  // Using ternary operator 
+            int max_num= max>num3? max: num3;                                // if the above both statements are present outside else after if means it throws error as"Miss placed else statement"
+            System.out.println(max_num+ " is the greater number");
+        }
+    }
+}
